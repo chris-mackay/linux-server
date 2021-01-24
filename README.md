@@ -8,6 +8,7 @@ A cheat sheet for setting up a simple linux server using a samba shared director
 * Eject SD card, then connect back to PC you used to flash
 * Open `network-config`
 * Add your network info under `access-points:`
+* [Netplan](https://itsfoss.com/connect-wifi-terminal-ubuntu/)
 
 ### Create a folder to mount a drive to and share
 `sudo mkdir /mnt/ssd`
