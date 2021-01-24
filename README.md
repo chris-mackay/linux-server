@@ -3,13 +3,6 @@ A cheat sheet for setting up a simple linux server using a samba shared director
 
 # Steps
 
-### Configure Wifi (Ubuntu Server and Raspberry Pi 4)
-* Flash image onto SD card using [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
-* Eject SD card, then connect back to PC you used to flash
-* Open `network-config`
-* Add your network info under `access-points:`
-* [Netplan](https://itsfoss.com/connect-wifi-terminal-ubuntu/)
-
 ### Create a folder to mount a drive to and share
 `sudo mkdir /mnt/ssd`
 
