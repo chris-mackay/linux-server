@@ -32,11 +32,16 @@ A cheat sheet for setting up a simple linux server using a samba shared director
 
 ### Add this text to the very end of smb.conf
 ```
-[share]  
+[share]
 comment = pi share
+public = yes
+writeable = yes
+browseable = yes
 path = /mnt/ssd
-read only = no
-browsable = yes
+create mask = 0777
+directory mask = 0777
+guest ok = yes
+only guest = no
 ```
 
 ### Create a password for the Samba share
