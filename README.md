@@ -25,7 +25,7 @@ A cheat sheet for setting up a simple linux server using a samba shared director
 `UUID=XXXXXXXXXXXXXXXX  /mnt/ssd  ntfs  defaults  0  2`
 
 ### Install Samba
-`sudo apt-get install samba-client samba-common -y`
+`sudo apt-get install samba`
 
 ### Open `smb.conf` and add share properties
 `sudo nano /etc/samba/smb.conf`
