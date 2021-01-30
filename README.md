@@ -1,7 +1,7 @@
 # linux-server
 A cheat sheet for setting up a simple linux server using a samba shared directory
 
-## Raspberry pi 4 (2gb RAM), Ubuntu Server 20.04
+Raspberry pi 4 (2gb RAM), Ubuntu Server 20.04
 
 </br>
 </br>
