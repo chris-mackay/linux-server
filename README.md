@@ -82,7 +82,7 @@ only guest = no
 ### Find your wifi network 
 `sudo iwlist wlan0 scan | grep EESID`
 
-### Add your wifi network to wpa_supplicant.conf
+### Add your wifi network to `wpa_supplicant.conf`
 `wpa_passphrase "EESID" "Password" | sudo tee /etc/wpa_supplicant.conf`
 
 ### Associate wifi network with interface
