@@ -43,7 +43,7 @@ Raspberry Pi 4 (2gb RAM), Raspberry Pi OS (32-bit)
 ### Open `smb.conf` and add share properties
 `sudo nano /etc/samba/smb.conf`
 
-### Add this text to the very end of smb.conf
+### Add this text to the very end of `smb.conf`
 ```
 [share]
 comment = pi share
@@ -86,7 +86,7 @@ This is the password you will use when connecting to your server from another de
 
 </br>
 
-![connect_windows](connect_windows.png?raw=true "connect_windows")
+<kbd>![connect_windows](connect_windows.png?raw=true "connect_windows")</kbd>
 
 </br>
 
@@ -97,12 +97,12 @@ This is the password you will use when connecting to your server from another de
 ## iPhone (Files app)
 </br>
 
-![browse_iphonee](browse_iphone.png?raw=true "browse_iphone")
+<kbd>![browse_iphonee](browse_iphone.png?raw=true "browse_iphone")</kbd>
 
 </br>
 
-![connect_iphone](connect_iphone.png?raw=true "connect_iphone")
+<kbd>![connect_iphone](connect_iphone.png?raw=true "connect_iphone")</kbd>
 
 </br>
 
-![pass_iphone](pass_iphone.png?raw=true "pass_iphone")
+<kbd>![pass_iphone](pass_iphone.png?raw=true "pass_iphone")</kbd>
