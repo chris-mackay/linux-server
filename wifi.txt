@@ -1,0 +1,22 @@
+# Setup Wifi (if necessary)
+### Install network tools
+`sudo apt install net-tools` </br>
+`sudo apt install wireless-tools`
+
+### Install wpasupplicant
+`sudo apt install wpasupplicant`
+
+### Find your wireless interface name (mine was wlan0)
+`ifconfig -a`
+
+### Find your wifi network 
+`sudo iwlist wlan0 scan | grep EESID`
+
+### Add your wifi network to `wpa_supplicant.conf`
+`wpa_passphrase "EESID" "Password" | sudo tee /etc/wpa_supplicant.conf`
+
+### Associate wifi network with interface
+`sudo wpa_supplicant -c /etc/wpa_supplicant.conf -i wlan0`
+
+### Check if your wifi interface has been assigned an IP address.
+`ifconfig -a`

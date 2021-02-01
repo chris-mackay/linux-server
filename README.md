@@ -58,38 +58,12 @@ only guest = no
 ```
 
 ### Create a password for the Samba share
+This is the password you will use when connecting to your server from another device
+
 `sudo smbpasswd -a pi`
 
 ### Reboot
 `sudo reboot`
-
-</br>
-</br>
-
-
-# Setup Wifi (if necessary)
-
-### Install network tools
-`sudo apt install net-tools` </br>
-`sudo apt install wireless-tools`
-
-### Install wpasupplicant
-`sudo apt install wpasupplicant`
-
-### Find your wireless interface name (mine was wlan0)
-`ifconfig -a`
-
-### Find your wifi network 
-`sudo iwlist wlan0 scan | grep EESID`
-
-### Add your wifi network to `wpa_supplicant.conf`
-`wpa_passphrase "EESID" "Password" | sudo tee /etc/wpa_supplicant.conf`
-
-### Associate wifi network with interface
-`sudo wpa_supplicant -c /etc/wpa_supplicant.conf -i wlan0`
-
-### Check if your wifi interface has been assigned an IP address.
-`ifconfig -a`
 
 </br>
 </br>
@@ -103,8 +77,32 @@ only guest = no
 
 ![ifconfig](ifconfig.png?raw=true "ifconfig")
 
-### Windows (Map Network Drive)
-`\\10.0.0.114\[share]` Include brackets
+</br>
 
-### Linux, MacOS, iPhone
-`smb://10.0.0.114`
+## Windows
+</br>
+
+![map_drive](map_drive.png?raw=true "map_drive")
+
+</br>
+
+![connect_windows](connect_windows.png?raw=true "connect_windows")
+
+</br>
+
+![pass_windows](pass_windows.png?raw=true "pass_windows")
+
+</br>
+
+## iPhone (Files app)
+</br>
+
+![browse_iphonee](browse_iphone.png?raw=true "browse_iphone")
+
+</br>
+
+![connect_iphone](connect_iphone.png?raw=true "connect_iphone")
+
+</br>
+
+![pass_iphone](pass_iphone.png?raw=true "pass_iphone")
