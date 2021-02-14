@@ -1,5 +1,5 @@
 # linux-server
-Steps for setting up a linux server using a samba shared directory
+Steps for setting up a linux server using a samba shared directory and a connected drive
 
 Raspberry Pi 4 (2gb RAM), Raspberry Pi OS (32-bit)
 
