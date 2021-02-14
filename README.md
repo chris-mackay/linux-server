@@ -21,16 +21,23 @@ Raspberry Pi 4 (2gb RAM), Raspberry Pi OS (32-bit)
 ### If the drive is already mounted use the line below to unmount, so you can remount to another directory
 `sudo umount /dev/sda1`
 
-### Install ntfs-3g if using an ntfs formatted drive
+### Install ntfs-3g if using an NTFS formatted drive
 `sudo apt install ntfs-3g`
 
-### Mount the drive to your share folder
+### Install exfat utils if using an exFAT formatted drive
+`sudo apt-get install exfat-fuse` </br>
+`sudo apt-get install exfat-utils`
+
+### Mount the drive to your share folder (NTFS)
 `sudo mount -t ntfs-3g /dev/sda1 /mnt/ssd/`
+
+### Mount the drive to your share folder (exFAT)
+`sudo mount -t exfat /dev/sda1 /mnt/ssd/`
 
 ### Add drive to fstab for auto mounting
 `sudo nano /etc/fstab`
 
-### Add this line to the fstab file at the very end. Replace the X's with the UUID that you found using blkid
+### Add this line to the fstab file at the very end. Replace the X's with the UUID that you found using blkid. If using an exFAT formatted drive, replace ntfs with exfat.
 `UUID=XXXXXXXXXXXXXXXX  /mnt/ssd  ntfs  defaults  0  2`
 
 </br>
