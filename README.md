@@ -1,12 +1,20 @@
 # linux-server
-Steps for setting up a linux server using a samba shared directory and a connected drive
-
-Raspberry Pi 4 (2gb RAM), Raspberry Pi OS (32-bit)
-
+Steps for setting up a linux server using a samba shared directory and a connected drive. The steps below assume you already have a linux operating system installed on your Raspberry Pi and a drive connected that you want to share on your network.
 </br>
+</br>
+
+Configuration used to create these steps:
+
+### Raspberry Pi 4 (2gb RAM)
+### Raspberry Pi OS (32-bit)
+### Samsung SSD 860 EVO 250GB 2.5 Inch SATA
+
 </br>
 
 # Steps
+
+### Open a terminal window
+</br>
 
 ### Create a folder to mount a drive to for sharing
 `sudo mkdir /mnt/ssd`
@@ -22,7 +30,7 @@ Raspberry Pi 4 (2gb RAM), Raspberry Pi OS (32-bit)
 `sudo umount /dev/sda1`
 
 ### Install ntfs-3g if using an NTFS formatted drive
-`sudo apt install ntfs-3g`
+`sudo apt-get install ntfs-3g`
 
 ### Install exfat utils if using an exFAT formatted drive
 `sudo apt-get install exfat-fuse` </br>
